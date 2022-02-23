@@ -33,15 +33,15 @@
                             <input id="kilometers" type="text" class="form-control">
                         </div>
                         <div class="col-4">
-                            <select class="form-select">
+                            <select id="my-select" class="form-select">
                                 <option id="maggiorenne" selected>Maggiorenne</option>
-                                <option id="minorenni" value="1">Minorenni</option>
-                                <option id="over-sessanta" value="2">Over 60</option>
+                                <option id="minorenni">Minorenni</option>
+                                <option id="over-sessanta">Over 60</option>
                               </select>
                         </div>
                     </div>
                     <button type="button" class="btn btn-primary">Genera</button>
-                    <button type="button" class="btn btn-primary">Annulla</button>
+                    <button id="cancel" type="button" class="btn btn-primary">Annulla</button>
                 </div>
             </div>
         </section>
@@ -75,7 +75,8 @@
                                     <p id="code-cp"></p>
                                 </div>
                                 <div class="col-3">
-                                    <h5 id="price">Costo biglietto</h5>
+                                    <h5>Costo biglietto</h5>
+                                    <p id="price"></p>
                                 </div>
                             </div>
                         </div>
