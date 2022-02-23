@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Biglietto online</title>
+</head>
+<body>
+
+    <main>
+        <!-- Calcola il biglietto -->
+        <section>
+            <div class="row">
+                <div class="col-12 text-uppercase">
+                    <h1>calcola il prezzo del tuo biglietto</h1>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-4">Nome Cognome</div>
+                        <div class="col-4">Km da percorrere</div>
+                        <div class="col-4">Fascia d'età</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-4">
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-4">
+                            <select class="form-select">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary">Genera</button>
+                    <button type="button" class="btn btn-primary">Annulla</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Il tuo biglietto -->
+        <section>
+            <div class="row">
+                <div class="col-12 text-uppercase">
+                    <h1>il tuo biglietto</h1>
+                </div>
+                <div class="col-12">
+                    <h4 class="text-uppercase">dettaglio passeggeri</h4>
+                    <div class="row">
+                        <div class="col-3">
+                            <h4 class="text-uppercase">nome passeggero</h4>
+                            <p id="name-passenger"></p>
+                        </div>
+
+                        <div class="col-9">
+                            <div class="row">
+                                <div class="col-3">
+                                    <h5>Offerta</h5>
+                                    <p id="offer"></p>
+                                </div>
+                                <div class="col-3">
+                                    <h5>Carrozza</h5>
+                                    <p id="carriage "></p>
+                                </div>
+                                <div class="col-3">
+                                    <h5>Codice CP</h5>
+                                    <p id="code-cp"></p>
+                                </div>
+                                <div class="col-3">
+                                    <h5 id="price">Costo biglietto</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
